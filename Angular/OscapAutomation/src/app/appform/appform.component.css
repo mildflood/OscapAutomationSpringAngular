@@ -1,0 +1,54 @@
+ #formcontainer{
+    width: 320px;
+    float: left;
+    margin-left: -6em;
+   } 
+   
+   #multiScanForm{
+   margin-top: -2em;  
+   }
+   
+   label{
+   font-size: 12px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: normal;
+   margin-bottom: 4px;
+   } 
+
+   .panel-heading{
+   font-size: 12px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: normal;  
+   text-align: center; 
+   }
+   
+   .timeControl, .dateControl, .emailControl, .selectControl{
+   margin-right: auto;
+   height: 28px;
+   font-size: 14px;
+   font-weight: normal;
+   width: 20em;
+   }
+   
+   .form-textBox{
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: em;
+   height: 8em; 
+   width:  20em;
+   }   
+   
+   .btn{
+   margin-bottom: 4px;
+   margin-top: -2px;
+   float: center;
+   margin-left: 26px; 
+   width: 100px;
+   }
+   
+   input{
+    margin-top: -4px;
+   } 
+
+   
+  

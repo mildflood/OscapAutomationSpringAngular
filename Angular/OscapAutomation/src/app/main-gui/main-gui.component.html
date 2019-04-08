@@ -1,0 +1,58 @@
+<div id="mainContentWrapper">
+    <div class="panel panel-info">
+        <div class="panel panel-heading"> </div>
+    <div class="panel panel-body">
+    <div class="row firstRow"><!-- Beginning of first Row --> 
+     <div class="col-md-10 leftColumn"> 
+    
+    <div id="scheduleTableContent"> 
+    <table id="multiScheduleDataTable" class="scheduletable scrollable table-hover table-striped table-bordered  table-responsive table-condensed"> 
+    <thead>
+    <tr>
+  
+    <th style="width: 8%">Node Name</th>
+    <th style="width: 10%">Administrator</th>	
+    <th style="width: 10%">Scheduled Date</th>	
+    <th style="width: 10%">Scheduled Time</th>
+    <th style="width: 8%">Status</th>		
+    <th style="width: 10%">Generated Report</th>
+    <th style="width:  8%">Read Report</th>
+    <th style="width: 8%">Save Report</th>
+    <th style="width: 8%">Delete</th>
+    </tr>			 
+    </thead>  
+    
+    <tbody>							
+    <tr *ngFor="let osdata of oscapData">
+     
+    <td>{{osdata.nodeName}}</td>
+    <td>{{osdata.admin}}</td>
+    <td>{{osdata.schedDate}}</td>
+    <td>{{osdata.schedTime}}</td> 
+    <td>{{osdata.status}}</td> 
+    <td>{{osdata.report}}</td> 
+    <td><button class="btn btn-default" (click)="openItem(osdata.nodeID)"><i class="glyphicon glyphicon-open-file">Read</i></button></td>
+    <td><button class="btn btn-default" (click)="saveItem(osdata.nodeID)"><i class="glyphicon glyphicon-save">Save</i></button></td>
+    <td><button class="btn btn-default" (click)="removeItem(osdata.nodeID)"><i class="glyphicon glyphicon-trash">Delete</i></button></td>  
+    </tr>
+    </tbody>		
+    </table> 
+    </div>  
+    
+    <button  class="btn btn-info btn-md leftButton"><i class="glyphicon glyphicon-chevron-left"></i> Previous</button> 
+    <button  class="btn btn-info btn-md rightButton">Next <i class="glyphicon glyphicon-chevron-right"></i></button> 
+    </div><!-- End of Left Column -->
+    
+    <div class="col-md-2 rightColumn"> 
+    <app-appform> </app-appform>
+
+    
+    </div>
+    
+    </div>
+    
+    </div> 
+    
+    </div>
+    </div>
+    
