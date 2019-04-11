@@ -1,0 +1,77 @@
+h1{
+font-size: 14px;
+font-family: Georgia;
+font-weight: bold;
+color: #FFFFFF;	
+}
+
+
+h2{
+font-family: 'Courier New', Courier, monospace;
+font-size: 12px;
+font-weight: bold;
+color: #FFFFFF;
+text-align: left;
+margin-left: 10px;  	
+}
+
+
+h3{
+text-align: left;
+font-size: 12px;
+font-weight: normal;
+font-family: Georgia;
+margin-top: 10px;
+color: #000000;
+}
+
+
+h4{
+margin-top: 4px;
+border-radius: 8px;
+font-size: 14px;
+font-weight: bold;
+font-family: 'Georgia';
+margin-left: auto;
+margin-right: auto;
+padding-top: 6px;
+padding-bottom: 6px;
+text-align: center;
+color: #FFFFFF; 
+}
+
+
+h6{
+color: #FFFFFF;
+text-align: left;
+font-size: 14px;
+font-weight: bold;
+font-family: Georgia;
+padding-top: 23px;
+padding-bottom: -20em;
+margin-left: 16px;
+}
+
+
+.headerSize{
+color: #FFFFFF;
+text-align: left;
+font-size: 16px;
+font-weight: bold;
+font-family: Georgia;
+}
+
+
+.logout{
+font-size: 14px;
+font-family: Georgia;
+font-weight: bold;	
+}
+
+
+.bannerMessage{
+text-align: right;
+font-size: 12px;
+font-family: Georgia;
+font-weight: bold;
+}

@@ -1,0 +1,503 @@
+body{
+width: 94%;
+margin: auto;	
+background-color: #333366;
+}
+
+#loadButton{
+margin-left: -6px;
+height: 40px;	
+}
+
+#submitButton, #clearButton{
+height: 40px;
+width: 90px;	
+}
+
+#dropDown{
+height: 40px;	
+}
+
+.scanMenu li{
+font-size: 14px;
+font-family: "Georgia";
+font-weight: normal;
+text-align: left;
+text-decoration: none;	
+}
+
+
+.mainContentWrapper{
+width: 94%;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+.homePageContainer{
+margin-left: auto;
+margin-right: auto;	
+border: 2px solid #9CC;
+}
+
+
+.reportList li{
+font-size: 16px;
+font-family: "Georgia";
+font-weight: normal;
+text-align: left;
+list-style-type: none;
+}
+
+#reportContainer{
+border: 2px solid #9CC;
+padding-left: 10px;
+padding-top: 10px;
+margin-top: -2em;
+}
+
+#myDataTable{
+font-size: 14px;
+font-family: "Georgia";
+font-weight: bold;
+text-align: left;	
+}
+
+.rightColumn, .leftColumn{
+margin-top: -2em;
+}
+
+.firstColumn{
+width: 280px;	
+
+}
+
+.secondColumn{
+width: 280px;
+	
+}
+
+.thirdColumn{
+width: 280px;
+	
+}
+
+.1stRow{
+margin-left: auto;
+margin-right: auto;	
+}
+
+#wrapper{
+width: 94%;
+margin: auto;	
+padding-top: -12px;
+background-color: #333366;	
+} 
+
+.contentContainer{
+background-color: grey;
+margin-top: -16px;
+width: 94%;
+}
+
+#banner{
+margin-top: 16px;	
+margin-left: auto;
+margin-right: auto;
+height: 4em;
+width: 94%;	
+background-color:#000000;
+}
+
+.form-control-md{
+margin-top: -8px;	
+}
+
+.form-check-input{
+font-size: 12px;
+font-family: Georgia;
+font-weight: normal;	
+}
+
+optgroup{
+width: 90%;	
+margin-top:-4px;	
+}
+
+#mainContent{
+margin-top: 14px;
+width: 94%;
+margin-left: auto;
+margin-right: auto;
+background-color: grey;
+}
+
+
+.outerPanel{
+width: 700px;	
+}
+
+.content-panel{
+width: 94%;
+margin-left: auto;
+margin-right: auto;	
+height: 500px;
+}
+
+
+#sideBar{
+border: 2px solid #9cc;	
+}
+
+#navigationTabs{
+color: #9CC;
+font-size: 14px;
+font-family: Georgia;
+}
+
+input{
+width: 280px;	
+font-size: 14px;
+font-family: Georgia;
+font-weight: normal;
+text-align: left;	
+}
+
+
+.form-control-inline {
+    min-width: 280px;
+    width: auto;
+    display: inline;
+}
+
+.control-label{
+font-size: 16px;
+font-weight: normal;
+font-family: Georgia;	
+}
+
+.form-group label{
+font-size: 16px;
+font-weight: normal;
+font-family: Georgia;
+margin-left: 18px;		
+}
+
+.dataTablePanel{
+margin-top: 20px;	
+}
+
+.form-group input{
+width: 280px;	
+}
+
+
+label{
+font-size: 16px;
+font-family: Georgia;	
+font-weight: normal; 
+}
+
+.navbar{
+width:94%;	
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 4px;
+}
+
+.nav a{
+font-size: 12px;
+font-weight: bold;
+font-family: Georgia;
+color: black;
+}
+
+
+ul a{
+color: black;
+text-decoration: none;
+font-family: Georgia;
+}
+
+.modal-title{
+font-size: 14px;
+font-family: Georgia;
+text-align: left;	
+}
+
+#mainContainer{
+width: 94%;
+margin-left: auto;
+margin-right: auto;
+margin-top: -1em;
+}
+
+#scanHostModal{
+font-size: 12px;
+font-family: Georgia;
+border: 4px solid #9CC;
+}
+
+
+#scanhostForm{
+
+}
+
+optgroup{
+margin: 8px;	
+text-align: left;
+font-size: 14px;
+font-family: "Georgia";
+}
+
+#scanForm{
+border: 4px solid #9CC;
+font-size: 12px;
+font-family: Georgia;
+padding: 10px;
+margin-top: -2em;
+font-size: 12px;
+font-weight: normal;
+}
+
+.form-control-lg{
+width: 24em;
+margin-left: auto;	
+margin-right: auto;
+border: 6px solid #9CC;
+}
+
+#confirmDataUpload{
+font-size: 14px;
+font-family: Georgia;	
+font-weight: bold;
+color: #000000;
+} 
+
+#tableContent{
+height: 200px;
+overflow: auto;
+margin: -12px;
+padding: 0;	
+margin-top: -2em;
+}
+
+
+#tableContent2{
+height: 200px;
+overflow: auto;
+margin: -12px;
+padding: 0;	
+margin-top: -3em;
+}
+
+
+.table-bordered{
+border: 1px solid #9CC;   
+}
+
+.table{
+border: 2px solid #9CC;
+margin-left: -4px;
+margin-right: 2px;
+width: 900px;
+padding: 0;
+text-align: center;
+font-family: Georgia;
+font-size: 12px;
+font-weight: normal;
+margin-bottom: -2em;
+}
+
+.realtimeTable{
+border: 4px solid #9CC;
+margin-left:  4px;
+margin-right: 4px;
+width: 800px;
+padding: 0;
+text-align: center;
+font-family: Georgia;
+font-size: 12px;
+font-weight: normal;
+margin-bottom: -2em;	
+margin-top: -2em; 
+}
+
+
+#dataTable{
+margin-left: 14px;	
+}
+
+
+td{
+margin: -12em;
+margin-bottom: -4em;
+font-family: Georgia;
+font-size: 14px;
+font-weight: normal;
+border: 1px solid #9CC;
+text-align: left;
+padding-top: -4px;
+padding-bottom: -4px;
+}
+
+
+th{
+margin-top: 8px;
+font-family: Georgia;
+font-size: 18px;
+font-weight: normal;
+font-style: italics;
+text-align: left;
+color: #000000;
+}
+
+
+label{
+font-size: 12px;
+font-weight: bold;
+font-family: Georgia;	
+margin-top: -12px;
+}
+
+
+.leftBox{ 
+margin-top: -2em;	
+margin-left: auto;
+margin-right: auto;
+height: 200px;
+}
+
+.midBox, .rightBox{
+margin-top: -2em;
+margin-left: -20px;	
+}	
+
+
+.realTimeMidBox{
+margin-top: -2em;
+margin-left: auto;	
+margin-right: auto;
+}
+
+
+.leftBoxBar{
+margin-top: 7px;	
+width: 310px;
+font-family: 'Courier New', 'Monospace';
+font-size: 14px;
+font-weight: bold;
+color: #FFFFFF;
+text-align: center;
+padding-top: 10px;
+}
+
+.rightBoxBar{
+margin-top: 7px;	
+width: 400px;
+height: 30px;
+font-family: 'Courier New', 'Monospace';
+font-size: 14px;
+font-weight: bold;
+color: #FFFFFF;
+text-align: center;
+padding-top: 10px;	
+}
+
+
+.midBoxBar{
+font-family: 'Courier New', 'Monospace';
+font-size: 14px;
+font-weight: bold;
+color: #FFFFFF;
+text-align: center;
+margin-top: 7px;	
+width: 550px;	
+padding-top: 12px;
+}
+
+.panelHeader{
+color: #000000;	
+}	
+
+.form-check-label{
+font-weight: normal;
+font-family: 'Georgia';
+font-size: 16px;	
+}
+
+
+#myBar{
+width: 1%;
+height: 30px;
+background-color: green;
+}
+
+#scanHostForm{
+
+}
+
+.reportsTable{
+font-size: 14px;
+font-family: 'Georgia';
+font-weight: normal;	
+margin-top: -1.5em;
+margin-left:  auto;
+margin-right: auto;
+width: 100em;
+}
+
+
+#reportsDataTable{	
+margin-left:  auto;
+margin-right: auto;
+width: 85em;
+}
+
+.scheduletable{
+margin-left:  auto;
+margin-right:  auto;
+margin-top: -2em;
+padding: 0;
+text-align: center;
+font-family: Georgia;
+font-size: 12px;
+font-weight: normal;
+margin-bottom: -2em;	
+width: 110em;
+}
+
+
+#scheduleDataTable{
+border: 2px solid #9CC;
+margin-left:  2px;
+margin-right: 2px;
+width: 95%;
+}
+
+
+.2ndReportColumn{
+margin-left: auto;
+margin-right:  auto;
+margin-top: -2em;
+}
+
+.reportForm{
+margin-top: 14px;	
+}
+
+.imgBox1, .imgBox2, .imgBox3{
+width: 300px; 
+height: 200px;
+margin-top: 10px; 
+margin-left:auto; 
+margin-right: auto; 
+margin-bottom: 20px; 
+border: 2px solid #9CC" 
+}
+
+.radio{
+margin-left: -20;
+margin-right: auto;
+}
+
