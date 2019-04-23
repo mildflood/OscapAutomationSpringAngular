@@ -1,24 +1,24 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
-import  { Observable } from 'rxjs';
-import { URLSearchParams } from '@angular/http';
-
+import { HttpClient } from '@angular/common/http';
+import { Formdata } from '../model/formdata';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class FormService {
 
-  private oscapPostUrl = 'http://localhost:8080/MyDemo/ScanScheduler';
-  
+    private oscapPostUrl = 'http://localhost:8888/OscapAutomation/ScanScheduler';
 
-  constructor(private httpClient: Http) { } 
+    constructor(private httpClient: HttpClient) { }
 
+    postOscapData(formdata: Formdata) {
+        console.log(formdata.nodename);
+        console.log(formdata.dateOfScan);
+        console.log(formdata.timeOfScan);
+        console.log(formdata.email);
+        return this.httpClient.post(this.oscapPostUrl, formdata)
+            .subscribe(() => { });
 
-  postOscapData(params: URLSearchParams) {
-    return this.httpClient.post(this.oscapPostUrl, params).subscribe((data) => {});
-   } 
-
-
+    }
 
 }

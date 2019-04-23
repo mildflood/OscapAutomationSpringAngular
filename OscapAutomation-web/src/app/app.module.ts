@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { MainGuiComponent } from './main-gui/main-gui.component';
 import { BannerComponent } from './banner/banner.component';
 import { AppformComponent } from './appform/appform.component';
-import { OscapserviceService } from './services/oscapservice.service'; 
+import { OscapserviceService } from './services/oscapservice.service';
 import { FormService } from './services/formservice.service';
-import { Http, HttpModule } from '@angular/http';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 
@@ -23,8 +24,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpModule,
-    FormsModule,
-   
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     OscapserviceService,

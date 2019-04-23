@@ -15,12 +15,12 @@ export class OscapserviceService {
   /**
    * Oscap get url of oscapservice service
    */
-  private oscapGetUrl = 'http://localhost:8080/ScanData/all';  
+  private oscapGetUrl = 'http://localhost:8888/OscapAutomation/api/host';  
 
   /**
    * Oscap post url of oscapservice service
    */
-  private oscapPostUrl = 'http://127.0.0.1:8080/ScanScheduler';
+  private oscapPostUrl = 'http://localhost:8888/OscapAutomation/ScanScheduler';
   
   /**
    * Author: Jonas Okwara
@@ -39,7 +39,7 @@ export class OscapserviceService {
     return this.httpClient.get(this.oscapGetUrl);
    } 
    
- postOscapData(formValues): any{
+ postOscapData(formValues): Observable<any>{
    
    return this.httpClient.post(this.oscapPostUrl, formValues);
  }  
