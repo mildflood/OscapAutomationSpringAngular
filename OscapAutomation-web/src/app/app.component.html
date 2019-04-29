@@ -1,5 +1,15 @@
-  <div id="container">
-  <app-banner> </app-banner>
-  <app-main-gui> </app-main-gui>
-  <router-outlet></router-outlet>
-   </div>
+<html>
+<body>
+    <!-- main app container -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <app-alert></app-alert>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

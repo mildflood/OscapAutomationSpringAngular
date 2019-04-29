@@ -1,7 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainGuiComponent } from './main-gui/main-gui.component';
 import { BannerComponent } from './banner/banner.component';
@@ -9,28 +10,42 @@ import { AppformComponent } from './appform/appform.component';
 import { OscapserviceService } from './services/oscapservice.service';
 import { FormService } from './services/formservice.service';
 import { HttpModule } from '@angular/http';
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
-
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { AlertComponent } from './alert/alert.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { AppRoutingModule } from './app-routing.module';
+import { JwtInterceptor, ErrorInterceptor } from './helper';
+import { AuthenticationService, AlertService, UserService } from './services';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MainGuiComponent,
-    BannerComponent,
-    AppformComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpModule,
-    HttpClientModule,
-    FormsModule
-  ],
-  providers: [
-    OscapserviceService,
-    FormService
-  ],
-  bootstrap: [AppComponent]
+    imports: [
+        BrowserModule,
+        HttpModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+        AppRoutingModule
+    ],
+    declarations: [
+        AppComponent,
+        MainGuiComponent,
+        BannerComponent,
+        AppformComponent,
+        HomeComponent,
+        LoginComponent,
+        AlertComponent,
+        PagenotfoundComponent
+    ],
+
+    providers: [
+        { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+        { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+        OscapserviceService,
+        AuthenticationService,
+        AlertService,
+        UserService,
+        FormService
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
