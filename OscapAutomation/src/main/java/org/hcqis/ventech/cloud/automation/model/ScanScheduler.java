@@ -7,7 +7,6 @@ package org.hcqis.ventech.cloud.automation.model;
  * represents the domain object
  * of a scan schedule
  */
-
 public class ScanScheduler {   
 	
 	private  String nodename;
